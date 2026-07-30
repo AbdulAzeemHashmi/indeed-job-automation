@@ -31,7 +31,7 @@ function fetchIndeedJobs() {
 
   // ===== CONFIGURE YOUR SEARCH =====
   var SEARCH_TERM = 'software engineer';   // Change to your desired job title
-  var LOCATION = 'United States';          // Change to your preferred country/city
+  var LOCATION = 'Pakistan';          // Change to your preferred country/city
   // ===================================
 
   var url = 'https://indeed-scraper.omkar.cloud/indeed/search';
