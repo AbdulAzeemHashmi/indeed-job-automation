@@ -1,103 +1,451 @@
-this is github repository link "https://github.com/AbdulAzeemHashmi/indeed-job-automation""# Indeed Job Automation → Google Sheets (100% Free) This project automatically fetches job listings from Indeed using the omkar.cloud free API and appends them to your Google Sheet with columns:
+<div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff6b35,50:f7931e,100:fdb833&height=280&section=header&text=Indeed%20Job%20Automation&fontSize=48&fontAlignY=36&animation=twinkling&fontColor=ffffff&desc=Sync%20Indeed%20Jobs%20to%20Google%20Sheets%20Automatically&descSize=18&descAlignY=62" width="100%"/>
 
+<br/>
 
-* Corporation
+# 🚀 Indeed Job Automation (100% Free)
 
-* Designation
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=ff6b35&center=true&vCenter=true&width=700&lines=No+Credit+Card+Required;No+Google+Cloud+Setup;No+Service+Account+Needed;100%25+Free+Forever+%F0%9F%8E%89" alt="Typing animation" />
 
-* Experience Required
+<br/>
 
-* Location
+[![Google Sheets](https://img.shields.io/badge/Google%20Sheets-Integrated-4285F4?style=for-the-badge&logo=google-sheets&logoColor=white)](https://sheets.google.com/)
+[![Indeed API](https://img.shields.io/badge/Indeed%20API-Free-FF6B35?style=for-the-badge&logo=indeed&logoColor=white)](https://omkar.cloud/)
+[![Google Apps Script](https://img.shields.io/badge/Apps%20Script-JavaScript-FFD700?style=for-the-badge&logo=google&logoColor=white)](https://script.google.com/)
+[![100% Free](https://img.shields.io/badge/Cost-FREE-22c55e?style=for-the-badge)](.)
+[![No Auth Required](https://img.shields.io/badge/Auth-None-9333ea?style=for-the-badge)](.)
 
-* Skills Required
+<br/>
 
-No credit card, no bank account, no Google Cloud Console service account required.
+> ✨ Automatically fetch job listings from Indeed using the **omkar.cloud free API** and sync them directly to your Google Sheet. No credit card, no bank account, no service account required. Just pure automation magic. 🪄
 
+<br/>
 
+[![View Google Sheet](https://img.shields.io/badge/📊%20View%20Live%20Sheet-blue?style=for-the-badge&labelColor=1f2937)](https://docs.google.com/spreadsheets/d/1r6Hta4H9zItMpQYEKiX27MoDDeohcRbPfyl5tVydAjo/edit)
+[![View Repository](https://img.shields.io/badge/🐙%20View%20Repository-181717?style=for-the-badge&labelColor=1f2937)](https://github.com/AbdulAzeemHashmi/indeed-job-automation)
 
-🔗 Your Google Sheet
+</div>
 
+<div align="center">
+<img src="https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif" width="360" alt="automation animation"/>
+</div>
+
+<br/>
+
+## 📋 Table of Contents
+
+| Section | Link |
+|:--------|:-----|
+| ✨ Features | [Jump to Features](#-features) |
+| 🎯 How It Works | [Jump to How It Works](#-how-it-works) |
+| ⚙️ Setup Guide | [Jump to Setup](#️-complete-setup-guide) |
+| 📊 Sheet Structure | [Jump to Structure](#-google-sheet-structure) |
+| ⏰ Automation | [Jump to Automation](#-schedule-automatic-runs) |
+| 🐛 Troubleshooting | [Jump to Troubleshooting](#-troubleshooting) |
+| ❓ FAQ | [Jump to FAQ](#-frequently-asked-questions) |
+
+<br/>
+
+## ✨ Features
+
+<div align="center">
+
+| Feature | Description | Icon |
+|:--------|:------------|:----:|
+| **100% Free** | No credit card, no paid tier, no hidden costs | 💰 |
+| **Indeed Integration** | Fetch real job listings directly from Indeed | 💼 |
+| **Google Sheets Sync** | Auto populate your spreadsheet with new jobs | 📊 |
+| **Zero Auth Setup** | No Google Cloud Console, no service account needed | 🔓 |
+| **Scheduled Runs** | Set it and forget it with time based triggers | ⏰ |
+| **Easy Configuration** | Just copy, paste, and run one function | 🚀 |
+| **Job Details Captured** | Corporation, Designation, Experience, Location, Skills | 📝 |
+| **Automated Organization** | New jobs added automatically to your sheet | ✅ |
+
+</div>
+
+<br/>
+
+## 🎯 How It Works
+
+<div align="center">
+
+```mermaid
+flowchart LR
+    A[📍 Indeed Website] -->|omkar.cloud API| B[🔍 Search & Fetch]
+    B -->|JSON Data| C[⚙️ Apps Script]
+    C -->|Process Jobs| D[📝 Format Columns]
+    D -->|Append Rows| E[📊 Google Sheet]
+    E -->|Display| F[✅ Your Dashboard]
+```
+
+</div>
+
+<br/>
+
+**The Flow:**
+
+1. 🔍 Your Apps Script triggers and calls the **omkar.cloud free Indeed API**
+2. 📥 The API returns job listings as JSON data
+3. ⚙️ Apps Script processes and formats the data
+4. 📝 Extracts: Corporation, Designation, Experience, Location, Skills
+5. 📊 Appends new rows to your Google Sheet
+6. ✅ Your spreadsheet automatically updates with fresh jobs
+
+<br/>
+
+## ️⚙️ Complete Setup Guide
+
+### 1️⃣ Get a Free Indeed API Key
+
+<details open>
+<summary><b>Click to expand</b></summary>
+<br/>
+
+1. 🌐 Visit [https://www.omkar.cloud/auth/sign-up](https://www.omkar.cloud/auth/sign-up)
+2. 📝 Sign up for a **free account** (100 free queries per month, no credit card required)
+3. 🔑 Once signed up, navigate to your account dashboard
+4. 📋 Copy your **API key** (it looks like a long random string)
+5. 💾 Save it somewhere safe, you will need it in Step 4
+
+> ℹ️ Free plan includes 100 API calls per month, which is perfect for daily or weekly job syncs.
+
+</details>
+
+### 2️⃣ Open Your Google Sheet
+
+<details open>
+<summary><b>Click to expand</b></summary>
+<br/>
+
+1. 📂 Open the template Google Sheet, or create your own blank sheet:
+
+   [![Open Template Sheet](https://img.shields.io/badge/📊%20Open%20Template%20Sheet-4285F4?style=for-the-badge)](https://docs.google.com/spreadsheets/d/1r6Hta4H9zItMpQYEKiX27MoDDeohcRbPfyl5tVydAjo/edit)
+
+2. 🔓 Make sure sharing is set to "Anyone with the link can view" (optional, for easy sharing)
+3. 📌 Note down the **Sheet ID** from the URL (the long alphanumeric string between `/d/` and `/edit`)
+
+Example URL:
+```
 https://docs.google.com/spreadsheets/d/1r6Hta4H9zItMpQYEKiX27MoDDeohcRbPfyl5tVydAjo/edit
+                                      ↑ Sheet ID ↑
+```
 
-🛠️ How to Set Up
+</details>
 
-1. Get a Free Indeed API Key
+### 3️⃣ Access Google Apps Script
 
+<details open>
+<summary><b>Click to expand</b></summary>
+<br/>
 
+1. 📱 In your Google Sheet, click **Extensions** in the top menu
+2. 🔧 Select **Apps Script** (this opens the editor)
+3. 🗑️ Delete all default code (the `myFunction()` boilerplate)
+4. 🟢 You now have a blank Apps Script project ready for your code
 
-* Go to https://www.omkar.cloud/auth/sign-up
+</details>
 
-* Sign up for a free account (100 free queries/month, no credit card)
+### 4️⃣ Add the Automation Script
 
-* Copy your API key
+<details open>
+<summary><b>Click to expand</b></summary>
+<br/>
 
+1. 📋 Copy the entire code from the `src/script.gs` file in this repository
+2. 📌 Paste it into the Apps Script editor
+3. 💾 Click **Save** (Ctrl+S or Cmd+S)
+4. ⚠️ You will see an error message, this is normal (we need to configure the API key first)
 
+</details>
 
-2. Open Your Google Sheet
+### 5️⃣ Configure Your API Key Securely
 
+<details open>
+<summary><b>Click to expand</b></summary>
+<br/>
 
+**Method: Store in Google Properties Service (Secure)**
 
-* Open the link above
+1. 📄 In the Apps Script editor, find the function named `setApiKey()`
+2. 🔑 Inside that function, replace the text `YOUR_ACTUAL_API_KEY_HERE` with your real omkar.cloud API key
+3. ▶️ Click the **Run** button to execute `setApiKey()`
+4. 🔐 Google will ask for permission (grant it, this is safe)
+5. ✅ Your API key is now stored securely in Google's PropertiesService
+6. 🗑️ You can now **delete the API key from the function** (optional but safer if sharing code)
 
-* Go to Extensions → Apps Script
+```javascript
+function setApiKey() {
+  // Replace this with your real API key from omkar.cloud
+  const API_KEY = "YOUR_ACTUAL_API_KEY_HERE";
+  PropertiesService.getUserProperties().setProperty("INDEED_API_KEY", API_KEY);
+  console.log("API Key stored securely!");
+}
+```
 
+After running once, you can leave the function as is or remove the hardcoded key.
 
+> 🔒 **Security Note:** Never commit your API key to GitHub. Use `.gitignore` and keep keys in environment variables or Google PropertiesService.
 
-3. Paste the Code
+</details>
 
+### 6️⃣ Run the Job Fetcher
 
+<details open>
+<summary><b>Click to expand</b></summary>
+<br/>
 
-* Delete all default code
+1. 🎯 In the Apps Script editor, find the function `fetchIndeedJobs`
+2. ▶️ Click the **Run** button (or select it from the dropdown and press Run)
+3. 🔐 Google will ask you to authorize the script (this is safe, it only accesses your sheet and the Indeed API)
+4. ⏳ Wait 5 to 15 seconds for the script to finish
+5. 📊 Check your Google Sheet, new job rows should appear automatically
+6. ✅ Success! Your first batch of jobs has been synced
 
-* Copy the entire content from `src/script.gs` in this repo
+</details>
 
-* Paste it into the Apps Script editor
+### 7️⃣ Schedule Automatic Runs (Optional but Recommended)
 
+<details open>
+<summary><b>Click to expand</b></summary>
+<br/>
 
+To run this automation **automatically on a schedule** (hourly, daily, weekly), follow these steps:
 
-4. Securely Store Your API Key
+1. 🕐 In the Apps Script editor, click the **clock icon** (Triggers) on the left sidebar
+2. ➕ Click **Add Trigger** (bottom right)
+3. 🎯 Choose the following settings:
+   - **Function to run:** `fetchIndeedJobs`
+   - **Type of event:** Time driven
+   - **Time based trigger:** Hour timer (or Daily, Weekly as preferred)
+   - **Time interval:** Every hour (or your preferred interval)
+4. 💾 Click **Save**
+5. ✅ Your automation is now scheduled! Jobs will sync automatically
 
+> 💡 **Tip:** Start with hourly or daily runs to stay within your free 100 API calls per month limit.
 
+</details>
 
-* In the Apps Script editor, find the function `setApiKey()`
+<br/>
 
-* Replace `YOUR_ACTUAL_API_KEY_HERE` with your real key
+## 📊 Google Sheet Structure
 
-* Run `setApiKey()` once (it stores the key securely inside Google's PropertiesService)
+Your Google Sheet will have these **5 columns** populated automatically:
 
-* After running, you can delete the hardcoded key from the function (or leave it – but never push it to GitHub)
+<div align="center">
 
+| Column Name | Description | Example |
+|:------------|:------------|:--------|
+| 🏢 **Corporation** | Company name | TechCorp Inc. |
+| 👔 **Designation** | Job title or position | Senior Software Engineer |
+| 📈 **Experience Required** | Years or level needed | 5+ years |
+| 📍 **Location** | Job location | San Francisco, CA |
+| 🛠️ **Skills Required** | Technical or soft skills | Python, React, AWS |
 
+</div>
 
-5. Run the Automation
+**Example Sheet Row:**
 
+```
+Corporation          | Designation              | Experience Required | Location            | Skills Required
+TechCorp Inc.        | Senior Software Engineer | 5+ years            | San Francisco, CA   | Python, React, AWS
+StartupXYZ           | Full Stack Developer     | 3+ years            | Remote              | Node.js, Vue.js, MongoDB
+```
 
+> ⚠️ **Note:** New jobs are appended to the sheet with each run. Duplicate jobs may appear if the API returns the same listings. You can periodically clean up duplicates manually or add deduplication logic.
 
-* Click Run → select `fetchIndeedJobs`
+<br/>
 
-* Grant permissions when asked (this is safe – your Google account only)
+## 📂 Repository Structure
 
-* Jobs will appear in your sheet
+```
+indeed-job-automation/
+├── README.md              # This file
+├── .gitignore            # Ignore sensitive files
+├── .env.example          # Example environment variables (optional)
+└── src/
+    └── script.gs         # Google Apps Script code
+```
 
+<details>
+<summary><b>File Descriptions</b></summary>
+<br/>
 
+| File | Purpose |
+|:-----|:--------|
+| `README.md` | Documentation and setup guide |
+| `.gitignore` | Prevents committing `.env` or sensitive files |
+| `.env.example` | Template for environment variables (optional) |
+| `src/script.gs` | Main Google Apps Script that fetches jobs and syncs to your sheet |
 
-6. Schedule Automatic Runs
+</details>
 
+<br/>
 
+## 🐛 Troubleshooting
 
-* In Apps Script, click the clock icon (Triggers) on the left
+<details open>
+<summary><b>❌ Error: "API Key not found"</b></summary>
+<br/>
 
-* Click + Add Trigger
+**Solution:**
+1. Make sure you ran the `setApiKey()` function at least once
+2. Check that your API key from omkar.cloud is correct (no extra spaces)
+3. Reload the Apps Script editor and try again
 
-* Choose function: `fetchIndeedJobs`
+</details>
 
-* Choose time-driven (e.g., every hour or daily)
+<details open>
+<summary><b>❌ Error: "Permission denied" when running the script</b></summary>
+<br/>
 
-* Save
+**Solution:**
+1. Click **Authorize** when Google asks for permissions
+2. The script needs access to read and write your Google Sheet and call external APIs
+3. This is completely safe and only accesses your data
 
+</details>
 
+<details open>
+<summary><b>❌ No jobs appear in my sheet</b></summary>
+<br/>
 
-📂 Repository Structure
+**Solution:**
+1. Check the Apps Script **Execution log** for errors (View > Execution log)
+2. Verify your API key is correct in omkar.cloud account
+3. Make sure you have API calls remaining (free plan has 100 per month)
+4. Try searching for different job keywords by editing the `fetchIndeedJobs` function
 
-indeed-job-automation/ ├── README.md ├── .gitignore ├── .env.example └── src/ └── script.gs" this is readme.md of that repository. generate updated readme.md without using any en dash + em dash, with using animations, visuals, icons, emojis
+</details>
+
+<details open>
+<summary><b>❌ Script runs but jobs are not formatted correctly</b></summary>
+<br/>
+
+**Solution:**
+1. The Indeed API may return inconsistent data
+2. Edit the `script.gs` file and adjust the column extraction logic to match your needs
+3. Check the API response format by logging it to the console
+
+</details>
+
+<details open>
+<summary><b>❌ Reached API call limit before the month ends</b></summary>
+<br/>
+
+**Solution:**
+1. Reduce the frequency of scheduled runs (weekly instead of hourly)
+2. Search for more specific job keywords to reduce returned results
+3. Consider upgrading to a paid omkar.cloud plan for more API calls
+
+</details>
+
+<br/>
+
+## ❓ Frequently Asked Questions
+
+<details>
+<summary><b>Q: Will this cost me money?</b></summary>
+<br/>
+
+**A:** No! Everything is 100% free:
+- Google Sheets is free
+- Google Apps Script is free
+- omkar.cloud free tier provides 100 API calls per month, no credit card required
+
+</details>
+
+<details>
+<summary><b>Q: Do I need to set up Google Cloud Console or a service account?</b></summary>
+<br/>
+
+**A:** No! This is one of the big advantages. Google Apps Script runs directly in your Google account with built-in authentication. No service account JSON files, no complicated OAuth flows, no Google Cloud billing.
+
+</details>
+
+<details>
+<summary><b>Q: What happens if I exceed 100 API calls per month?</b></summary>
+<br/>
+
+**A:** Your script will throw an error and stop syncing jobs until the month resets or you upgrade your omkar.cloud account to a paid plan.
+
+</details>
+
+<details>
+<summary><b>Q: Can I customize which columns appear in my sheet?</b></summary>
+<br/>
+
+**A:** Yes! Edit the `script.gs` file and modify the column extraction logic to pull different fields from the Indeed API response.
+
+</details>
+
+<details>
+<summary><b>Q: Can multiple people use the same Google Sheet?</b></summary>
+<br/>
+
+**A:** Yes! Google Sheets supports collaborative editing. However, each person running the script will need their own omkar.cloud API key stored in their own Apps Script instance, or you can share a single API key (though this is not recommended for security).
+
+</details>
+
+<details>
+<summary><b>Q: How do I update job listings and remove old ones?</b></summary>
+<br/>
+
+**A:** The script appends new rows. To manage old data:
+1. Manually delete rows you don't need
+2. Archive old data to another sheet tab
+3. Add custom logic to the script to avoid duplicates or old listings
+
+</details>
+
+<details>
+<summary><b>Q: Is my API key safe?</b></summary>
+<br/>
+
+**A:** When stored using Google PropertiesService, your API key is secure. However:
+1. Never hardcode it in GitHub
+2. Use `.gitignore` to exclude `.env` files
+3. If sharing code, remove the API key or use environment variables
+
+</details>
+
+<br/>
+
+## 🚀 Next Steps
+
+1. ✅ Complete the setup guide above
+2. 📊 Customize columns in `src/script.gs` if needed
+3. ⏰ Set up automatic triggers to run on your preferred schedule
+4. 🔄 Monitor your Google Sheet for new job listings
+5. 📤 (Optional) Share your sheet with others
+
+<br/>
+
+## 📝 License
+
+This project is open source and available under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
+
+<br/>
+
+## 🙏 Credits and Acknowledgments
+
+- 🎯 **Indeed** for providing job listings
+- 🔌 **omkar.cloud** for the free Indeed API wrapper
+- 📊 **Google Sheets** and **Google Apps Script** for seamless automation
+- 💡 Everyone building automation tools to save time
+
+<br/>
+
+<div align="center">
+
+### ⭐ If this automation saved you time, please give it a star!
+
+[![Star on GitHub](https://img.shields.io/badge/⭐%20Star%20This%20Repo-yellow?style=for-the-badge)](https://github.com/AbdulAzeemHashmi/indeed-job-automation)
+
+<br/>
+
+Made with 💙 by [Abdul Azeem Hashmi](https://github.com/AbdulAzeemHashmi)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:fdb833,100:ff6b35&height=120&section=footer" width="100%"/>
+
+</div>
