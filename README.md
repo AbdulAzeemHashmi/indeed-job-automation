@@ -419,6 +419,7 @@ indeed-job-automation/
 4. 🔄 Monitor your Google Sheet for new job listings
 5. 📤 (Optional) Share your sheet with others
 
+
 ## 🙏 Credits and Acknowledgments
 
 - 🎯 **Indeed** for providing job listings
