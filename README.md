@@ -267,8 +267,6 @@ function setApiKey() {
 
 After running once, you can leave the function as is or remove the hardcoded key.
 
-> 🔒 **Security Note:** Never commit your API key to GitHub. Use `.gitignore` and keep keys in environment variables or Google PropertiesService.
-
 </details>
 
 ### 6️⃣ Run the Job Fetcher
