@@ -284,10 +284,6 @@ After running once, you can leave the function as is or remove the hardcoded key
 5. 📊 Check your Google Sheet, new job rows should appear automatically
 6. ✅ Success! Your first batch of jobs has been synced
 
-<div align="center">
-<img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" width="150" alt="success checkmark animation"/>
-</div>
-
 </details>
 
 ### 7️⃣ Schedule Automatic Runs (Optional but Recommended)
