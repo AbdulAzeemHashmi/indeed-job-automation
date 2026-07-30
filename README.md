@@ -347,8 +347,6 @@ StartupXYZ           | Full Stack Developer     | 3+ years            | Remote  
 ```
 indeed-job-automation/
 ├── README.md              # This file
-├── .gitignore            # Ignore sensitive files
-├── .env.example          # Example environment variables (optional)
 └── src/
     └── script.gs         # Google Apps Script code
 ```
@@ -360,8 +358,6 @@ indeed-job-automation/
 | File | Purpose |
 |:-----|:--------|
 | `README.md` | Documentation and setup guide |
-| `.gitignore` | Prevents committing `.env` or sensitive files |
-| `.env.example` | Template for environment variables (optional) |
 | `src/script.gs` | Main Google Apps Script that fetches jobs and syncs to your sheet |
 
 </details>
