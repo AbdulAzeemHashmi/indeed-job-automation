@@ -18,6 +18,10 @@
 
 <br/>
 
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=22c55e&center=true&vCenter=true&width=600&lines=%E2%9A%99%EF%B8%8F+Automation+Status%3A+Running;%F0%9F%9F%A2+Live+Sync+Active;%F0%9F%94%84+Checking+for+New+Jobs..." alt="Live status animation" />
+
+<br/>
+
 > ✨ Automatically fetch job listings from Indeed using the **omkar.cloud free API** and sync them directly to your Google Sheet. No credit card, no bank account, no service account required. Just pure automation magic. 🪄
 
 <br/>
@@ -33,17 +37,81 @@
 
 <br/>
 
+<div align="center">
+
+### ⚙️ Powered By Fully Automated Syncing
+
+<img src="https://media.giphy.com/media/dXICCcNIUnjKk/giphy.gif" width="120" alt="spinning gear icon"/>
+
+<img src="https://img.shields.io/badge/Automation-Active-success?style=for-the-badge&logo=googlesheets&logoColor=white" alt="Automation status badge"/>
+
+</div>
+
+<br/>
+
+## 📊 Quick Stats
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/API%20Calls-100%2Fmonth-orange?style=for-the-badge&logo=speedtest&logoColor=white" alt="API calls"/>
+<img src="https://img.shields.io/badge/Setup%20Time-5%20minutes-brightgreen?style=for-the-badge&logo=clockify&logoColor=white" alt="Setup time"/>
+<img src="https://img.shields.io/badge/Cost-%240.00-success?style=for-the-badge&logo=cashapp&logoColor=white" alt="Cost"/>
+<img src="https://img.shields.io/badge/Difficulty-Beginner%20Friendly-blueviolet?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Difficulty"/>
+
+<br/><br/>
+
+**Setup Progress Preview:**
+
+```
+[██████████████████████████████████████] 100% Complete
+1️⃣ Get API Key   2️⃣ Open Sheet   3️⃣ Apps Script   4️⃣ Add Code   5️⃣ Set Key   6️⃣ Run   7️⃣ Schedule
+```
+
+</div>
+
+<br/>
+
 ## 📋 Table of Contents
 
 | Section | Link |
 |:--------|:-----|
+| 🎬 Demo | [Jump to Demo](#-demo) |
 | ✨ Features | [Jump to Features](#-features) |
 | 🎯 How It Works | [Jump to How It Works](#-how-it-works) |
-| ⚙️ Setup Guide | [Jump to Setup](#️-complete-setup-guide) |
+| ⚙️ Setup Guide | [Jump to Setup](#-complete-setup-guide) |
 | 📊 Sheet Structure | [Jump to Structure](#-google-sheet-structure) |
-| ⏰ Automation | [Jump to Automation](#-schedule-automatic-runs) |
+| ⏰ Automation | [Jump to Automation](#-schedule-automatic-runs-optional-but-recommended) |
 | 🐛 Troubleshooting | [Jump to Troubleshooting](#-troubleshooting) |
 | ❓ FAQ | [Jump to FAQ](#-frequently-asked-questions) |
+
+<br/>
+
+## 🎬 Demo
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=4285F4&center=true&vCenter=true&width=650&lines=%F0%9F%94%8D+Fetching+jobs+from+Indeed...;%E2%9A%99%EF%B8%8F+Processing+with+Apps+Script...;%F0%9F%93%9D+Formatting+columns...;%E2%9C%85+New+rows+added+to+your+sheet!" alt="Demo simulation animation" />
+
+<br/>
+
+<img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="420" alt="sheet populating animation"/>
+
+<br/><br/>
+
+**What happens when you run the script:**
+
+| Step | Action | Result |
+|:----:|:-------|:-------|
+| 1 | ▶️ Click Run on `fetchIndeedJobs` | Script starts executing |
+| 2 | 🔍 API call sent to omkar.cloud | Job data requested |
+| 3 | 📥 JSON response received | Raw job listings returned |
+| 4 | ⚙️ Data parsed and formatted | Columns matched to sheet structure |
+| 5 | 📊 New rows appended live | Sheet updates in real time |
+| 6 | ✅ Sync complete | Fresh jobs ready to review |
+
+[![Watch Live Sheet Update](https://img.shields.io/badge/📺%20See%20It%20Live%20on%20Google%20Sheets-4285F4?style=for-the-badge)](https://docs.google.com/spreadsheets/d/1r6Hta4H9zItMpQYEKiX27MoDDeohcRbPfyl5tVydAjo/edit)
+
+</div>
 
 <br/>
 
@@ -62,6 +130,12 @@
 | **Job Details Captured** | Corporation, Designation, Experience, Location, Skills | 📝 |
 | **Automated Organization** | New jobs added automatically to your sheet | ✅ |
 
+<br/>
+
+<img src="https://img.shields.io/badge/⚡_Fast-Under%2015%20seconds%20per%20run-yellow?style=flat-square" alt="Fast"/>
+<img src="https://img.shields.io/badge/🔁_Repeatable-Runs%20on%20a%20schedule-blue?style=flat-square" alt="Repeatable"/>
+<img src="https://img.shields.io/badge/🧩_Simple-One%20file%20setup-green?style=flat-square" alt="Simple"/>
+
 </div>
 
 <br/>
@@ -79,6 +153,8 @@ flowchart LR
     E -->|Display| F[✅ Your Dashboard]
 ```
 
+<img src="https://media.giphy.com/media/artj92V8o75VPL7AeQ/giphy.gif" width="200" alt="loading automation animation"/>
+
 </div>
 
 <br/>
@@ -94,7 +170,13 @@ flowchart LR
 
 <br/>
 
-## ️⚙️ Complete Setup Guide
+## ⚙️ Complete Setup Guide
+
+<div align="center">
+<img src="https://img.shields.io/badge/⏱️_Total_Setup_Time-About%205%20minutes-orange?style=for-the-badge" alt="Setup time"/>
+</div>
+
+<br/>
 
 ### 1️⃣ Get a Free Indeed API Key
 
@@ -128,7 +210,7 @@ flowchart LR
 Example URL:
 ```
 https://docs.google.com/spreadsheets/d/1r6Hta4H9zItMpQYEKiX27MoDDeohcRbPfyl5tVydAjo/edit
-                                      ↑ Sheet ID ↑
+                                      up Sheet ID up
 ```
 
 </details>
@@ -201,6 +283,10 @@ After running once, you can leave the function as is or remove the hardcoded key
 4. ⏳ Wait 5 to 15 seconds for the script to finish
 5. 📊 Check your Google Sheet, new job rows should appear automatically
 6. ✅ Success! Your first batch of jobs has been synced
+
+<div align="center">
+<img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" width="150" alt="success checkmark animation"/>
+</div>
 
 </details>
 
@@ -311,7 +397,7 @@ indeed-job-automation/
 <br/>
 
 **Solution:**
-1. Check the Apps Script **Execution log** for errors (View > Execution log)
+1. Check the Apps Script **Execution log** for errors (View then Execution log)
 2. Verify your API key is correct in omkar.cloud account
 3. Make sure you have API calls remaining (free plan has 100 per month)
 4. Try searching for different job keywords by editing the `fetchIndeedJobs` function
@@ -359,7 +445,7 @@ indeed-job-automation/
 <summary><b>Q: Do I need to set up Google Cloud Console or a service account?</b></summary>
 <br/>
 
-**A:** No! This is one of the big advantages. Google Apps Script runs directly in your Google account with built-in authentication. No service account JSON files, no complicated OAuth flows, no Google Cloud billing.
+**A:** No! This is one of the big advantages. Google Apps Script runs directly in your Google account with built in authentication. No service account JSON files, no complicated OAuth flows, no Google Cloud billing.
 
 </details>
 
@@ -392,7 +478,7 @@ indeed-job-automation/
 <br/>
 
 **A:** The script appends new rows. To manage old data:
-1. Manually delete rows you don't need
+1. Manually delete rows you do not need
 2. Archive old data to another sheet tab
 3. Add custom logic to the script to avoid duplicates or old listings
 
@@ -412,6 +498,12 @@ indeed-job-automation/
 <br/>
 
 ## 🚀 Next Steps
+
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=900&color=fdb833&center=true&vCenter=true&width=550&lines=Ready+to+automate+your+job+search%3F;Let%27s+get+syncing!" alt="Next steps typing" />
+</div>
+
+<br/>
 
 1. ✅ Complete the setup guide above
 2. 📊 Customize columns in `src/script.gs` if needed
@@ -435,6 +527,12 @@ indeed-job-automation/
 ### ⭐ If this automation saved you time, please give it a star!
 
 [![Star on GitHub](https://img.shields.io/badge/⭐%20Star%20This%20Repo-yellow?style=for-the-badge)](https://github.com/AbdulAzeemHashmi/indeed-job-automation)
+
+<img src="https://img.shields.io/github/stars/AbdulAzeemHashmi/indeed-job-automation?style=social" alt="GitHub stars"/>
+
+<br/><br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=ff6b35&center=true&vCenter=true&width=500&lines=Happy+Job+Hunting!+%F0%9F%8E%89;Automate+once%2C+benefit+forever!+%E2%9C%A8" alt="Footer typing" />
 
 <br/>
 
