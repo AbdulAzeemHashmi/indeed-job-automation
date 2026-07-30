@@ -419,14 +419,6 @@ indeed-job-automation/
 4. 🔄 Monitor your Google Sheet for new job listings
 5. 📤 (Optional) Share your sheet with others
 
-<br/>
-
-## 📝 License
-
-This project is open source and available under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
-
-<br/>
-
 ## 🙏 Credits and Acknowledgments
 
 - 🎯 **Indeed** for providing job listings
